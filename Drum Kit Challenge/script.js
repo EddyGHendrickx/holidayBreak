@@ -10,8 +10,7 @@ for (let i = 0; i < sounds.length; i++) {
     changes.push(document.getElementsByClassName("key")[i]);
 }
 document.addEventListener("keypress", function (e) {
-    changes[newKeys.indexOf(e.key)].setAttribute("style", "transition: all 1000ms linear");
-    changes[newKeys.indexOf(e.key)].setAttribute("style", "border: 5px solid yellow; transform: scale(1.05, 1.05)");
+    changes[newKeys.indexOf(e.key)].setAttribute("style", "border: 5px solid yellow; transform: scale(1.05, 1.05); transition: all 300ms linear");
     sounds[newKeys.indexOf(e.key)].play();
     setTimeout(function (){
         changes[newKeys.indexOf(e.key)].removeAttribute("style");
