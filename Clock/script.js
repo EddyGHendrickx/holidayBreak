@@ -1,13 +1,21 @@
 armSeconds = document.getElementById("armSec");
 armMinutes = document.getElementById("armMin");
 armHours = document.getElementById("armHour");
+let today = new Date;
+console.log(today.getHours());
+
+let s = today.getSeconds();
+let m = today.getMinutes();
+let h = today.getHours();
 
 
-let s = 50;
-let m = 59;
-let h = 0;
+armSeconds.setAttribute("style", `transform: rotate(${s * 6}deg)`);
+armMinutes.setAttribute("style", `transform: rotate(${m * 6}deg)`);
+armHours.setAttribute("style", `transform: rotate(${h * 30}deg)`);
+
 //Seconds Timer
 setInterval(function () {
+    console.log(h, m, s);
     armSeconds.setAttribute("style", `transform: rotate(${s * 6}deg)`);
     if (s === 60) {
         minutePasses();
@@ -35,3 +43,4 @@ function hourPasses() {
         h = 0;
     }
 }
+
