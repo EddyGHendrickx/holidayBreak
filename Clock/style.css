@@ -1,0 +1,22 @@
+#outerClock {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    margin-left: 800px;
+    margin-right: 500px;
+    margin-top: 200px;
+    position: absolute;
+    z-index: 1;
+}
+
+#armSec {
+    margin-left: 200px;
+    height: 200px;
+    width: 10px;
+    background-color: black;
+    z-index: 10;
+    transform-origin: bottom center;
+    transition: transform 0ms linear;
+}
