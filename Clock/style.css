@@ -12,11 +12,34 @@
 }
 
 #armSec {
-    margin-left: 200px;
+    position: absolute;
+    right: 190px;
     height: 200px;
     width: 10px;
     background-color: black;
     z-index: 10;
+    transform-origin: bottom center;
+    transition: transform 0ms linear;
+}
+
+#armMin {
+    position: absolute;
+    right: 190px;
+    height: 200px;
+    width: 10px;
+    background-color: yellow;
+    z-index: 11;
+    transform-origin: bottom center;
+    transition: transform 0ms linear;
+}
+
+#armHour {
+    position: absolute;
+    right: 190px;
+    height: 200px;
+    width: 10px;
+    background-color: blue;
+    z-index: 12;
     transform-origin: bottom center;
     transition: transform 0ms linear;
 }
