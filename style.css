@@ -16,7 +16,7 @@
     right: 190px;
     height: 200px;
     width: 10px;
-    background-color: black;
+    background-color: lightblue;
     z-index: 10;
     transform-origin: bottom center;
     transition: transform 0ms linear;
@@ -25,7 +25,8 @@
 #armMin {
     position: absolute;
     right: 190px;
-    height: 200px;
+    height: 150px;
+    top: 50px;
     width: 10px;
     background-color: yellow;
     z-index: 11;
@@ -36,9 +37,10 @@
 #armHour {
     position: absolute;
     right: 190px;
-    height: 200px;
+    height: 100px;
     width: 10px;
-    background-color: blue;
+    top: 100px;
+    background-color: greenyellow;
     z-index: 12;
     transform-origin: bottom center;
     transition: transform 0ms linear;
